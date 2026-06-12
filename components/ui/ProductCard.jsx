@@ -5,12 +5,13 @@ import { useState } from 'react';
 import { CardHeader,CardContent,CardFooter } from './card';
 import { Card } from './card';
 import { Badge } from './badge';
-import { Link, TrendingDown } from 'lucide-react';
+import { TrendingDown } from 'lucide-react';
 import { Button } from './button';
 import { ChevronUp, ChevronDown } from "lucide-react";
 import { Trash2 } from 'lucide-react';
 import { ExternalLink } from 'lucide-react';
 import PriceChart from '../PriceChart';
+import Link from "next/link";
 
 const ProductCard = ({product}) => {
     const [showChart, setShowChart] = useState(false);
